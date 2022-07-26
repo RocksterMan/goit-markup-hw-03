@@ -1,0 +1,255 @@
+/* Загальні спільні стилі сайту */
+
+:root {
+    --bgc-main-tittle: #2F303A;
+    --bgc-blocks:#F5F5F5; 
+    --bgc-header:#FFFFFF;
+    --bgc-team: #F5F4FA;
+    --bgc-footer: #2F303A;
+    --fst-text-color: #212121;
+    --snd-text-color: #757575;
+    --special-color: #2196F3;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: var(--fst-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* Header */
+
+.header {
+    color: var(--fst-text-color);
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--bgc-header);
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.logo-web {
+    color: var(--special-color);
+}
+
+.header-nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.contact {
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    color: var(--snd-text-color);
+    text-decoration: none;
+}
+.contact:hover,
+.site-nav:hover {
+    color: var(--special-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav {
+    color: var(--fst-text-color);
+    text-decoration: none;
+}   
+
+.current {
+    color: var(--special-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--bgc-footer);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-address,
+.footer-contact {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer-address,
+.logo-studio {
+    color: #FFFFFF;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--special-color);
+}
+
+
+/* Стилі для index.html */
+.main-tittle {
+    background-color: var(--bgc-main-tittle);
+    text-align: center;
+}
+.main-slogan {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.main-button {
+    cursor: pointer;
+    background: var(--special-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    width: 216px;
+    height: 50px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button {
+    display: contents;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+.main-adv-tittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fst-text-color);
+}
+.main-adv-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--snd-text-color);
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.main-wdwd-tittle,
+.team-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--fst-text-color)
+}
+
+.team {
+    background: var(--bgc-team);
+}
+
+.team-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: max-content;
+}
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-job {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--snd-text-color);
+}
+
+
+/* Стилі для portfolio.html */
+
+.portfolio-tittle {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.prtfl-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: center;
+    height: 38px;
+    width: max-content;
+    border-radius: 4px;
+    background: var(--bgc-team);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.prtfl-button:hover,
+.prtfl-button:focus {
+    background: var(--special-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.prtfl-cards {
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.prtfl-case-tittle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--fst-text-color);
+    width: 322px;
+    height: 36px;
+}
+.prtfl-case-disc {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--snd-text-color);
+}
+
