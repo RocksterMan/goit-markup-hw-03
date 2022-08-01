@@ -48,6 +48,8 @@ address {
 .list {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* ---------  Header ---------  */
@@ -83,15 +85,28 @@ address {
     color: var(--snd-text-color);
     text-decoration: none;
 }
-.contact:hover,
-.link:hover {
+
+.links {
+    color: var(--fst-text-color);
+    text-decoration: none;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}   
+
+
+.site-nav .links:hover,
+.site-nav .links:focus,
+.header-contact .contact:focus,
+.header-contact .contact:hover {
     color: var(--special-color);
 }
 
-.link {
-    color: var(--fst-text-color);
-    text-decoration: none;
-}   
+
+.site-nav {
+    margin-left: 93px;
+    display: flex;
+}
 
 .header-nav {
     font-family: 'Roboto', sans-serif;
@@ -104,19 +119,14 @@ address {
 .header-contact {
     margin-left: auto;
 }
-
-.list .item {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .list .item + .item {
     margin-left: 50px;
 }
 
-.site-nav {
-    margin-left: 93px;
+.header-nav .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .phone {
@@ -135,13 +145,15 @@ address {
 
 .footer {
     background-color: var(--bgc-footer);
-    line-height: 1.85;
+    line-height: 1.72;
     letter-spacing: 0.03em;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-address-block{
-    margin-top: 20px;
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 .footer-address,
@@ -154,6 +166,9 @@ address {
 .logo-studio {
     color: #FFFFFF;
 }
+.footer-item {
+    display: block;
+}
 
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
@@ -162,6 +177,14 @@ address {
 .footer-contact:focus {
     color: var(--special-color);
 }
+
+.footer-address {
+    margin-bottom: 9px;
+}
+.footer-item-adress:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 
 /* Нотатки
 Не ставить елементам фіксовану висоту (height),
@@ -200,7 +223,7 @@ address {
     text-align: center;
     letter-spacing: 0.06em;
     display: inline-block;
-    padding: 10px 32px;
+    padding: 10px 26px;
     align-items: center;
 }
 .button {
@@ -210,24 +233,24 @@ address {
     cursor: pointer;
 }
 
-/* --- Main advantage --- */
+/* --- Main privileges --- */
 
-.main-advantage {
+.privileges {
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.adv-list {
+.privileges-list {
     width: 270px;
 }
 
-.list .adv-list + .adv-list,
+.list .privileges-list + .privileges-list,
 .list .team-list + .team-list {
     margin-left: 30px;
 }
 
-.main-adv-tittle {
+.privileges-tittle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -236,7 +259,7 @@ address {
     color: var(--fst-text-color);
     margin-bottom: 10px;
 }
-.main-adv-text {
+.privileges-text {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--snd-text-color);
@@ -267,7 +290,7 @@ address {
 }
 
 .wdwd-blocks,
-.adv-blocks,
+.privileges-blocks,
 .team-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -304,6 +327,7 @@ address {
 
 .team-description {
     padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
