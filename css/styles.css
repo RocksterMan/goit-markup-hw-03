@@ -56,8 +56,10 @@ address {
 
 .header {
     color: var(--fst-text-color);
-    border-bottom: 1px solid #ECECEC;
     background-color: var(--bgc-header);
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 17px;
 }
 
 .logo {
@@ -86,22 +88,21 @@ address {
     text-decoration: none;
 }
 
-.links {
+.site-nav-links {
     color: var(--fst-text-color);
     text-decoration: none;
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 14px;
 }   
 
 
-.site-nav .links:hover,
-.site-nav .links:focus,
+.site-nav .site-nav-links:hover,
+.site-nav .site-nav-links:focus,
 .header-contact .contact:focus,
 .header-contact .contact:hover {
     color: var(--special-color);
 }
-
 
 .site-nav {
     margin-left: 93px;
@@ -111,22 +112,24 @@ address {
 .header-nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
 }
+/* .item {
+    display: list-item;
+} */
 
 .header-contact {
     margin-left: auto;
 }
-.list .item + .item {
+.list .site-nav-item + .site-nav-item {
     margin-left: 50px;
 }
 
-.header-nav .logo {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
+.header-section {
+    display: flex;
+    align-items: center;
 }
 
 .phone {
@@ -154,6 +157,7 @@ address {
     display: block;
     margin-bottom: 20px;
     padding: 0;
+    width: 200px;
 }
 
 .footer-address,
@@ -312,8 +316,7 @@ address {
 
 .team {
     background: var(--bgc-team);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
 }
 
 .team-card {
